@@ -9,3 +9,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: docker build . -t ghcr.io/satcomx00-x00/squid-proxy:latest -t ghcr.io/satcomx00-x00/squid-proxy:1.0
+      - run: docker push ghcr.io/satcomx00-x00/squid-proxy:latest ghcr.io/satcomx00-x00/squid-proxy:1.0
